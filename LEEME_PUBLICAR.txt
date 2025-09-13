@@ -1,0 +1,33 @@
+INSTRUCCIONES RÁPIDAS (sin jerga) — Cómo publicar este sitio
+
+Este paquete contiene:
+- index.html
+- styles.css
+- assets/ (imágenes + logo)
+
+Opción A — Publicar gratis con Netlify (recomendado por simple):
+1) Cree una cuenta en netlify.com (gratis).
+2) Arrastre y suelte la carpeta completa "amaneser_simple_site" en la pantalla "Deploy your site" (Drag & Drop).
+3) Netlify le dará una URL temporal. Cambie el nombre del sitio a "amaneser" (o similar).
+4) Conecte su dominio de GoDaddy (amaneserpr.org):
+   - En Netlify: Site configuration → Domain management → Add custom domain → escriba www.amaneserpr.org
+   - Siga las instrucciones: en GoDaddy DNS agregue un CNAME para host "www" apuntando a su URL de Netlify.
+   - En GoDaddy, haga también un "Forwarding" del dominio raíz amaneserpr.org hacia https://www.amaneserpr.org (permanente 301).
+5) Espere unos minutos y pruebe https://www.amaneserpr.org
+
+Opción B — Publicar con GitHub Pages (gratis):
+1) Abra github.com y cree un nuevo repositorio (público) llamado amaneser-site.
+2) Suba todos los archivos de la carpeta "amaneser_simple_site".
+3) En Settings → Pages → Build and deployment: seleccione "Deploy from a branch" y escoja la rama main y carpeta / (root).
+4) Guarde. GitHub le dará una URL. Luego en GoDaddy:
+   - Cree un CNAME para "www" → su URL de GitHub Pages (el host que le indiquen).
+   - Reenvíe el dominio raíz amaneserpr.org a https://www.amaneserpr.org
+
+Cómo editar texto o fotos:
+- Abra index.html con un editor de texto (puede usar el Bloc de notas). Cambie textos en español donde lo necesite.
+- Reemplace imágenes en la carpeta assets/ manteniendo los mismos nombres de archivo para no tocar el HTML.
+- Colores están en styles.css en la sección :root (las líneas con --brand-accent).
+
+Soporte:
+- Si algo no funciona, normalmente es un registro DNS sin guardar o con un valor distinto al indicado. Revise y guarde.
+- Los cambios de DNS pueden tardar un poco en verse (a veces 5–20 minutos).
