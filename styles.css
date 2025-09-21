@@ -14,7 +14,7 @@
 html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif;color:var(--brand-text);background:var(--bg);}
 img{max-width:100%;display:block}
 
-.section p{font-size:16px;line-height:1.6;margin:10px 0}
+.section p{font-size:16px;line-height:1.6;margin:14px 0}
 .narrow{max-width:820px;margin:auto}
 
 .site-header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--border);z-index:10}
@@ -33,7 +33,7 @@ img{max-width:100%;display:block}
 .section{padding:56px 0}
 .section.light{background:var(--muted)}
 .section h2{font-size:clamp(20px,2.4vw,28px);margin:0 0 12px;color:var(--brand-dark)}
-.section p{font-size:18px;line-height:1.6;margin:10px 0}
+.section p{font-size:18px;line-height:1.6;margin:14px 0}
 .section em{font-style:italic}
 
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:8px}
